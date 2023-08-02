@@ -1,0 +1,365 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+}
+
+.navbar a:hover {
+  background-color: #ccc;
+  color: #fff;
+  border-radius: 20px;
+}
+
+.circle {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  background-color: #ccc;
+  border-radius: 50%;
+  background-image: url("WhatsApp\ Image\ 2023-01-31\ at\ 16.51.07.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.button-container {
+  
+  position: fixed;
+  top: calc(20% + 330px); /* Boşluk ayarını buradan yapabilirsin */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.custom-button {
+  margin: 0 15px; /* İstediğin boşluğa göre ayarlayabilirsin */
+  padding: 10px 20px;
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 36px; /* Yazı boyutunu istediğiniz değere ayarlayın */
+}
+.custom-button:hover {
+  background-color: blue; /* İstenilen hover rengini burada belirleyin */
+  color: white; /* İstenilen yazı rengini burada belirleyin */
+  border-radius: 20px; /* Oval kenarlık için buradaki değeri istediğiniz boyuta ayarlayabilirsiniz */
+}
+
+
+.custom-button i {
+  font-size: 30px; /* İkon boyutunu istediğiniz değere ayarlayın */
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    padding: 20px;
+    font-size: 10px;
+    justify-content: flex-start;
+    
+  }
+  
+  .navbar a {
+    margin-top: 10px;
+    margin-left: -5px;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+    margin-top: -50px;
+  }
+}
+
+.textbox {
+  position: fixed;
+  top: calc(20% + 400px); /* İstenilen yükseklik değeri */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: -25px;
+}
+
+.textbox p {
+  margin: 10;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0); /* Şeffaflık değeri ve arka plan rengi */
+  font-size: 30px;
+}
+
+.textbox2 {
+  position: fixed;
+  top: calc(20% + 450px); /* İstenilen yükseklik değeri */
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.textbox2 p {
+  margin: 10;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0); /* Şeffaflık değeri ve arka plan rengi */
+  font-size: 30px;
+}
+
+body {
+  background-image: url("363000c1b5735897d229b4d3f2504126.jpg");
+  background-size: cover;
+}
+@media screen and (max-width: 768px) {
+  .button-container {
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -220px;
+  }
+  .custom-button {
+    margin: 0 5px;
+  }
+  .textbox{
+    margin-top: -40px;
+  }
+  .textbox2{
+    margin-top: -60px;
+  }
+  .textbox p {
+    font-size: 15px;
+  }
+  .textbox2 p{
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+}
+
+/*
+İNDEX BÖLÜMÜNÜN KODLARI - BURADAN SONRASI HAKKIMDA BÖLÜMÜNÜN CSS KODLARI */
+
+
+
+
+.button-container2 {
+  
+  position: fixed;
+  top: calc(20% + 330px); /* Boşluk ayarını buradan yapabilirsin */
+  left: 20%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.textbox3 {
+  position: fixed;
+  top: calc(20% + 400px); /* İstenilen yükseklik değeri */
+  left: 20%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.textbox3 p {
+  margin: 10;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0); /* Şeffaflık değeri ve arka plan rengi */
+  font-size: 30px;
+}
+
+.textbox4 {
+  position: fixed;
+  top: calc(20% + 450px); /* İstenilen yükseklik değeri */
+  left: 20%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.textbox4 p {
+  margin: 10;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0); /* Şeffaflık değeri ve arka plan rengi */
+  font-size: 30px;
+}
+.textbox5 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  overflow-y: auto; /* Scrollbar ekleme */
+  max-height: 800px; /* Maksimum yükseklik değeri */
+}
+
+.textbox5 p{
+  margin: 10;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.5); /* Şeffaflık değeri ve arka plan rengi */
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+
+.button-container3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: calc(5% + 680px);
+  left: 20%;
+  transform: translateX(-50%);
+}
+
+.custom-button2 {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.custom-button2:hover {
+  background-color: orange;
+}
+/* Media queries for responsiveness */
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+
+  .circle2 {
+    width: 200px;
+    height: 200px;
+    top: 15%;
+  }
+
+  .button-container2 {
+    top: calc(20% + 280px);
+  }
+
+  .textbox3 {
+    top: calc(20% + 350px);
+  }
+
+  .textbox4 {
+    top: calc(20% + 400px);
+  }
+
+  .textbox5 {
+    top: calc(5% + 50px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .button-container3 {
+    top: calc(5% + 500px);
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjust styles for even smaller screens */
+
+  .circle2 {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    top: 10%;
+  }
+  .button-container2 {
+    top: calc(20% + 230px);
+  }
+
+  .textbox3 {
+    top: calc(20% + 300px);
+  }
+
+  .textbox4 {
+    top: calc(20% + 350px);
+  }
+
+  .textbox5 {
+    top: calc(5% + 80px);
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+ 
+}
+
+
+
+
+/*
+HAKKIMDA BÖLÜMÜNÜN KODLARI - BURADAN SONRASI YAZILAR BÖLÜMÜNÜN CSS KODLARI */
+
+
+
+.button-container0 {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.rounded-button {
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.rounded-button:hover {
+  background-color: orange;
+}
+
+table {
+  margin: 80px auto 0; /* Tabloyu sayfanın ortasına yerleştirir 80px ortaya alıyor */ 
+}
+
+th {
+  font-size: 18px; /* Başlık font boyutunu büyütür */
+}
+
+th, td {
+  padding: 10px; /* Hücre içindeki içeriğin etrafına boşluk ekler */
+}
+
+/* Başlıklar arasına boşluk ekler */
+th:not(:last-child) {
+  margin-right: 20px;
+}
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.centered-window {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+
+
+
